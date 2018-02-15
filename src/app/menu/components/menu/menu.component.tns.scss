@@ -1,0 +1,9 @@
+@import '../../../shared/colors';
+
+$menuHeight: 80;
+
+StackLayout {
+    background-color: $secondary;
+    line-height:$menuHeight;
+    padding:0 20 0 20;
+}

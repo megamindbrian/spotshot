@@ -1,0 +1,15 @@
+<header class="topnav" [class.menuOpen]="menuOpen">
+    <a class="menubtn" (click)="menuService.controller.next(!menuOpen)"><span> </span></a>
+    <span class="title" [innerHtml]="menuTitle | translate"></span>
+</header>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" [(opened)]="menuOpen">
+        <seed-menu [items]="menuService.menuItems"></seed-menu>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+    

@@ -1,0 +1,5 @@
+<Button *ngIf="item"
+    (tap)="menuService.controller.next(false)"
+    [nsRouterLink]="item.link"
+    [nsRouterLinkActive]="'active'"
+    [text]="item.title | translate"></Button>

@@ -1,0 +1,21 @@
+@import '../../../shared/colors';
+
+$menuHeight: 80px;
+
+:host {
+    margin:0 20px;
+    height:$menuHeight;
+}
+
+a {
+    color:$pure-white;
+    text-decoration: none;
+    font-size:15px;
+    font-weight:600;
+    &.active {
+        color: $primary;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+}

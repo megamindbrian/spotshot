@@ -1,0 +1,27 @@
+{
+    "menu": {
+        "home": "Home",
+        "jobs": "Jobs",
+        "payouts": "Payouts",
+        "account": "Account"
+    },
+    "home": {
+        "title": "Spot Shot",
+        "description": "Sign up and start getting paid for photos!"
+    },
+    "jobs": {
+        "title": "Jobs",
+        "description": "View job postings, and jobs you've accepted."
+    },
+    "payouts": {
+        "title": "Payouts",
+        "description": "View payment history, sent and recieved."
+    },
+    "account": {
+        "title": "Account",
+        "description": "View and change your account information."
+    },
+    "phone": {
+        "edition": "Phone Edition!"
+    }
+}

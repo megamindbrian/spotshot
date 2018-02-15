@@ -1,0 +1,11 @@
+@import '../../../shared/colors';
+
+$menuHeight: 80px;
+
+:host {
+    display:flex;
+    background-color: $secondary;
+    line-height:$menuHeight;
+    padding:60px 20px 0 20px;
+    flex-direction: column;
+}

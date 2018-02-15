@@ -1,0 +1,14 @@
+@import '../../../shared/colors';
+
+$menuHeight: 80;
+
+Button {
+    height:$menuHeight;
+    margin:0 20;
+    color:$pure-white;
+    font-size:15px;
+    font-weight:bold;
+    &.active {
+        color: $primary;
+    }
+}

@@ -1,0 +1,16 @@
+<ActionBar>
+    <GridLayout width="100%" columns="40, *" rows="auto, *">
+        <Button text="Menu" (tap)="menuService.controller.next(true)" class="action-image"></Button>
+        <Label col="1" [text]="menuTitle | translate" class="action-label"></Label>
+    </GridLayout>
+</ActionBar>
+
+<RadSideDrawer [class]="menuClass" #drawer showOverNavigation="false" (drawerClosed)="menuService.menuOpen=false">
+    <StackLayout tkDrawerContent class="drawer-content">
+        <seed-menu [items]="menuService.menuItems"></seed-menu>
+    </StackLayout>
+    <StackLayout tkMainContent class="main-content" row="1">
+        <router-outlet></router-outlet>
+    </StackLayout>
+</RadSideDrawer>
+    
