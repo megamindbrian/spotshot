@@ -1,5 +1,6 @@
+import { AgmCoreModule } from '@agm/core';
 import { NgModule } from '@angular/core';
-import { SHARED_MODULES, COMPONENT_DECLARATIONS } from './jobs.common';
+import { SHARED_MODULES, COMPONENT_DECLARATIONS } from './inbox.common';
 
 @NgModule({
     imports: [
@@ -9,4 +10,4 @@ import { SHARED_MODULES, COMPONENT_DECLARATIONS } from './jobs.common';
         ...COMPONENT_DECLARATIONS
     ],
 })
-export class JobsModule { }
+export class InboxModule { }

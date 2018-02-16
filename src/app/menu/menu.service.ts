@@ -7,6 +7,7 @@ export class MenuService {
     public controller = new BehaviorSubject<boolean>(false);
     public menuOpen = false;
     public menuTitle = new BehaviorSubject<string>("home.title");
+    public button = new BehaviorSubject<string>("#menu");
 
     menuItems: MenuItem[] = [
         {
@@ -14,8 +15,20 @@ export class MenuService {
             link: ['/home']
         },
         {
-            title: 'menu.jobs',
-            link: ['/jobs']
+            title: 'menu.projects',
+            link: ['/projects']
+        },
+        {
+            title: 'menu.inbox',
+            link: ['/inbox']
+        },
+        {
+            title: 'menu.payouts',
+            link: ['/payouts']
+        },
+        {
+            title: 'menu.account',
+            link: ['/account']
         }
     ];
 

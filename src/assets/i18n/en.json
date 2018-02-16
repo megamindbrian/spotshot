@@ -1,7 +1,8 @@
 {
     "menu": {
         "home": "Home",
-        "jobs": "Jobs",
+        "projects": "Projects",
+        "inbox": "Inbox",
         "payouts": "Payouts",
         "account": "Account"
     },
@@ -9,9 +10,27 @@
         "title": "Spot Shot",
         "description": "Sign up and start getting paid for photos!"
     },
-    "jobs": {
-        "title": "Jobs",
-        "description": "View job postings, and jobs you've accepted."
+    "projects": {
+        "title": "Projects",
+        "description": "View project postings, and projects you've accepted."
+    },
+    "request": {
+        "title": "Photo request",
+        "description": "Request a photo shoot at a location.",
+        "time": "When is a good time?",
+        "budget": "How much will you pay?"
+    },
+    "spot": {
+        "title": "Spot photos",
+        "description": "View or upload the results of the photoshoot."
+    },
+    "inbox": {
+        "title": "Inbox",
+        "description": "Recieve notifications and contact the photographer."
+    },
+    "messages": {
+        "title": "Messages",
+        "description": "View and send messages with photographers."
     },
     "payouts": {
         "title": "Payouts",
@@ -20,8 +39,5 @@
     "account": {
         "title": "Account",
         "description": "View and change your account information."
-    },
-    "phone": {
-        "edition": "Phone Edition!"
     }
 }

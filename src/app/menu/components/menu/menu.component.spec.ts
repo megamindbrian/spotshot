@@ -40,7 +40,7 @@ describe('MenuComponent', () => {
         it('should render 2 items', () => {
             component.items = [
                 { title: 'menu.home', link: ['/home'] },
-                { title: 'menu.jobs', link: ['/jobs'] }
+                { title: 'menu.projects', link: ['/projects'] }
             ];
             fixture.detectChanges();
             fixture.whenStable().then(() => {

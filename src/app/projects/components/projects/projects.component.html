@@ -1,0 +1,25 @@
+<h1 class="title"
+    [innerText]="'projects.description' | translate"></h1>
+
+<div>
+    <div class="job-row">
+        <div><a mat-raised-button color="primary" routerLink="1">View</a></div>
+        <p>6934 E Sandra Ter<br />
+            <small>2 photographers</small></p>
+        <span>15 photos</span>
+    </div>
+    <a mat-raised-button color="primary" routerLink="request">Request photos</a>
+</div>
+
+<h1 class="title"
+    [innerText]="'Projects nearby'"></h1>
+
+<div>
+    <div class="job-row">
+        <div><a mat-raised-button color="primary" (click)="applyConfirmation()">Apply</a></div>
+        <p>4988 Thornhill Ln<br />
+            <small>Within the week between 3:00 PM and 5:00 PM</small></p>
+        <span>0 photographers</span>
+    </div>
+    <a mat-raised-button color="primary">Turn on Location services</a>
+</div>

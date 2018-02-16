@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { MatCheckboxModule, MatSidenavModule } from '@angular/material';
 // vendor dependencies
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -18,10 +17,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(<any>http, './assets/i18n/', '.json');
 }
 
-export const MATERIALS = [
-    MatCheckboxModule,
-    MatSidenavModule
-]
 
 @NgModule({
     declarations: [ 
@@ -37,7 +32,6 @@ export const MATERIALS = [
                 deps: [HttpClient]
             }
         }),
-        ...MATERIALS,
         ...SHARED_MODULES
     ],
     providers: [

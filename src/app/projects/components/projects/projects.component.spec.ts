@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { Pipe, PipeTransform } from '@angular/core';
 
-import { JobsComponent } from './jobs.component';
+import { ProjectsComponent } from './projects.component';
 
 @Pipe({
     name: 'translate'
@@ -13,14 +13,14 @@ class MockTranslatePipe implements PipeTransform {
     }
 }
 
-describe('JobsComponent', () => {
-    let component: JobsComponent;
-    let fixture: ComponentFixture<JobsComponent>;
+describe('ProjectsComponent', () => {
+    let component: ProjectsComponent;
+    let fixture: ComponentFixture<ProjectsComponent>;
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             declarations: [
-                JobsComponent,
+                ProjectsComponent,
                 MockTranslatePipe
             ]
         })
@@ -28,7 +28,7 @@ describe('JobsComponent', () => {
     }));
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(JobsComponent);
+        fixture = TestBed.createComponent(ProjectsComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });
@@ -37,14 +37,14 @@ describe('JobsComponent', () => {
         expect(component).toBeTruthy();
     });
 
-    it('should render the Jobs title', () => {
+    it('should render the Projects title', () => {
         const titleEl = fixture.debugElement.query(By.css('.title')).nativeElement;
-        expect(titleEl.innerText).toEqual('jobs.title');
+        expect(titleEl.innerText).toEqual('projects.title');
     });
 
-    it('should render the Jobs description', () => {
+    it('should render the Projects description', () => {
         const descriptionEl = fixture.debugElement.query(By.css('.description')).nativeElement;
-        expect(descriptionEl.innerText).toEqual('jobs.description');
+        expect(descriptionEl.innerText).toEqual('projects.description');
     });
 
 });

@@ -19,9 +19,8 @@ header.topnav {
 
 router-outlet::ng-deep + * {
     padding:60px 40px 40px 40px;
-    display:flex;
-    flex-direction: column;
     min-height: 100%;
+    display:block;
 }
 
 .title {
@@ -48,11 +47,20 @@ mat-sidenav-container.mat-drawer-container {
     position:relative;
 }
 
+.menubtn-arrow {
+    margin: 5px;
+    width: 0; 
+    height: 0; 
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid transparent;
+    border-right: 28px solid $dark-gray;  
+}
+
 .menubtn span, .menubtn:before, .menubtn:after {
     content: " ";
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-color:$dark-gray;
     margin: 0;
     transition: 0.4s;
     line-height: 5px;

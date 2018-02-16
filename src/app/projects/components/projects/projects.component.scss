@@ -1,0 +1,18 @@
+.job-row { 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.job-row a {
+    margin: 5px 5px 5px 0;
+}
+
+.job-row p {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.job-row span {
+    flex-shrink:0;
+}

@@ -8,7 +8,11 @@ export const HomeRoutes: Routes = [
         component: HomeComponent
     },
     {
-        path: 'jobs',
-        loadChildren: './app/jobs/jobs.module#JobsModule'
+        path: 'projects',
+        loadChildren: './app/projects/projects.module#ProjectsModule'
+    },
+    {
+        path: 'inbox',
+        loadChildren: './app/inbox/inbox.module#InboxModule'
     }
 ];

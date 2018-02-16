@@ -1,5 +1,6 @@
 <header class="topnav" [class.menuOpen]="menuOpen">
-    <a class="menubtn" (click)="menuService.controller.next(!menuOpen)"><span> </span></a>
+    <a class="menubtn" *ngIf="(menuService.button | async) == '#menu'" (click)="menuService.controller.next(!menuOpen)"><span> </span></a>
+    <a class="menubtn-arrow" *ngIf="(menuService.button | async) != '#menu'" [routerLink]="menuService.button | async"><span> </span></a>
     <span class="title" [innerHtml]="menuTitle | translate"></span>
 </header>
 

@@ -1,0 +1,20 @@
+<h1 class="title"
+    [innerText]="'request.description' | translate"></h1>
+
+<mat-form-field>
+    <input matInput placeholder="Address, location, business name" value="">
+</mat-form-field>
+<div class="map-container">
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6-7CChLh6uU8YqPqpbrXemF4w2blXGf4">
+    </script>
+    <agm-map [latitude]="lat" [longitude]="lng">
+        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+    </agm-map>
+</div>
+
+<h1 class="title"
+    [innerText]="'request.time' | translate"></h1>
+
+<h1 class="title"
+    [innerText]="'request.budget' | translate"></h1>
